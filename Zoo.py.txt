@@ -1,5 +1,5 @@
 class Animal:
-	def __init__(self, nombre, tipo):
+	def __init__(self, nombre, tipo, clasificacion):
 		self.nombre = nombre
 		self.tipo = tipo
 		print ("nuevo animal creado")
@@ -9,7 +9,7 @@ class Animal:
 		print ("el nuevo animal es es " + self.brand)
 	
 	def get_brand(self):
-		print ("la marca actual es " + self.brand)
+		print ("el tipo actual es " + self.brand)
 
 
 def main():
@@ -21,7 +21,8 @@ def main():
    while nom < i:
          nmbre = str(input("Dame un nombre:")) 
          tipo = str(input("Dame un tipo:"))
-         ani= nmbre + tipo;
+         clasi = str(input("Dame una clasificacion"))
+         ani= nmbre + tipo + clasi;
          ListAN.append(ani)
          nom = nom + 1 
          input(ListAN)
@@ -35,3 +36,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
