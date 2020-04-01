@@ -1,0 +1,37 @@
+class Animal:
+	def __init__(self, nombre, tipo):
+		self.nombre = nombre
+		self.tipo = tipo
+		print ("nuevo animal creado")
+
+	def set_brand(self,brand):
+		self.brand = brand
+		print ("el nuevo animal es es " + self.brand)
+	
+	def get_brand(self):
+		print ("la marca actual es " + self.brand)
+
+
+def main():
+
+   nom = 0  
+   ListAN=[]
+  
+   i = int(input("Cuantos animales:"))
+   while nom < i:
+         nmbre = str(input("Dame un nombre:")) 
+         tipo = str(input("Dame un tipo:"))
+         ani= nmbre + tipo;
+         ListAN.append(ani)
+         nom = nom + 1 
+         input(ListAN)
+
+
+   animal = Animal("Aslan","Leon",)
+   animal.set_brand("Leon")
+   animal.get_brand()
+
+
+
+if __name__ == "__main__":
+	main()
